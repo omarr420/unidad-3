@@ -1,0 +1,121 @@
+/* Página completa */
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../assets/ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+.cart-header {
+  background: rgba(0, 0, 50, 0.8);
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Contenedor del carrito */
+.cart-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Caja del carrito */
+.cart-content {
+  background: rgba(255, 255, 255, 0.95);
+  color: black;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Productos */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Producto individual */
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 50px;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* Nombre del producto */
+.item-name {
+  font-weight: bold;
+}
+
+/* Precio */
+.item-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Botones de cantidad */
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-actions button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.cart-actions button:hover {
+  background: #0056b3;
+}
+
+/* Botón de eliminar */
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.remove-btn:hover {
+  background: darkred;
+}
+
+/* Mensaje de carrito vacío */
+.empty-cart {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Pie de página */
+.cart-footer {
+  background: rgba(0, 0, 50, 0.8);
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
