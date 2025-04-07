@@ -7,15 +7,18 @@
   background-size: cover;
   background-position: center;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* Encabezado */
 .cart-header {
-  background: rgba(0, 0, 50, 0.8);
-  padding: 15px;
+  background: rgba(0, 0, 50, 0.85);
+  padding: 20px;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Contenedor del carrito */
@@ -24,26 +27,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 /* Caja del carrito */
 .cart-content {
-  background: rgba(255, 255, 255, 0.95);
-  color: black;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
+  background: rgba(255, 255, 255, 0.97);
+  color: #222;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+  max-width: 700px;
   width: 100%;
   text-align: center;
+}
+
+/* Título del carrito */
+.cart-content h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #0077b6;
 }
 
 /* Productos */
 .cart-items {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
 }
 
 /* Producto individual */
@@ -51,15 +61,23 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 50px;
   align-items: center;
-  background: #f7f7f7;
-  padding: 10px;
-  border-radius: 5px;
+  background: #e3f2fd;
+  padding: 12px 15px;
+  border-radius: 10px;
   font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
 }
 
 /* Nombre del producto */
 .item-name {
-  font-weight: bold;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Precio */
@@ -73,17 +91,18 @@
 .cart-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .cart-actions button {
   background: #007bff;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 6px 12px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 .cart-actions button:hover {
@@ -92,30 +111,47 @@
 
 /* Botón de eliminar */
 .remove-btn {
-  background: red;
+  background: #ff4d4d;
   color: white;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 .remove-btn:hover {
-  background: darkred;
+  background: #b30000;
 }
 
 /* Mensaje de carrito vacío */
 .empty-cart {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  color: #555;
+  color: #444;
+  padding: 30px 0;
 }
 
 /* Pie de página */
 .cart-footer {
-  background: rgba(0, 0, 50, 0.8);
-  padding: 15px;
+  background: rgba(0, 0, 50, 0.85);
+  padding: 18px;
   text-align: center;
   font-size: 18px;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cart-item {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .item-price,
+  .cart-actions,
+  .remove-btn {
+    justify-self: start;
+  }
 }

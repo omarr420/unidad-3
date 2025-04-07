@@ -5,7 +5,7 @@ import oceanImage from "../assets/ocean.jpg"; // Asegúrate de que la imagen est
 const Cart = () => {
   const [cartItems, setCartItems] = useState([
     { id: 1, name: "Gorro de natación ecológico", price: 200, quantity: 1 },
-    { id: 2, name: "Traje de baño reciclado", price: 800, quantity: 1 },
+    { id: 2, name: "Traje de baño", price: 800, quantity: 1 },
   ]);
 
   const updateQuantity = (id, amount) => {
