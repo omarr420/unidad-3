@@ -40,6 +40,12 @@
   max-width: 700px;
   width: 100%;
   text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Título del carrito */
@@ -47,6 +53,7 @@
   margin-bottom: 20px;
   font-size: 26px;
   color: #0077b6;
+  text-shadow: 1px 1px 2px #ccc;
 }
 
 /* Productos */
@@ -65,11 +72,13 @@
   padding: 12px 15px;
   border-radius: 10px;
   font-size: 18px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .cart-item:hover {
   transform: scale(1.02);
+  background: #d0ebff;
 }
 
 /* Nombre del producto */
@@ -103,6 +112,7 @@
   border-radius: 6px;
   font-size: 18px;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .cart-actions button:hover {
@@ -119,6 +129,7 @@
   border-radius: 6px;
   font-size: 18px;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .remove-btn:hover {
@@ -131,6 +142,9 @@
   font-weight: bold;
   color: #444;
   padding: 30px 0;
+  text-align: center;
+  background: rgba(255,255,255,0.8);
+  border-radius: 12px;
 }
 
 /* Pie de página */
@@ -154,4 +168,43 @@
   .remove-btn {
     justify-self: start;
   }
+}
+
+/* 🚀 Estilo del Menú de Navegación */
+.nav {
+  background-color: rgba(0, 0, 50, 0.9);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #0077b6;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #0096c7;
 }
