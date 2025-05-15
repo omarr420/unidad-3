@@ -9,19 +9,19 @@ const Menu = () => {
       <div className="menu-section">
         <h3>Actividades Realizadas en el Curso</h3>
         <ul>
-          <li>Actividad preliminar: Compartamos</li>
-          <li>Actividad 1.1 - Metodología ágil SCRUM</li>
-          <li>Actividad 1.2 - Product Backlog</li>
-          <li>Actividad integradora Sprint, el corazón de SCRUM</li>
-          <li>Actividad 2.1 - Aplicación de SCRUM</li>
-          <li>Actividad 2.2 - Sprint Schedule</li>
-          <li>Actividad integradora - Backlog y Sprint Schedule</li>
-          <li>Actividad 3.1 - Primera fase de desarrollo y revisión</li>
-          <li>Actividad 3.2 - Segunda fase y ajustes del backlog</li>
-          <li>Actividad 3.3 - Tercera fase de desarrollo</li>
-          <li>Actividad 4.1 - Reunión de revisión inicial</li>
-          <li>Actividad 4.2 - Revisión de modificaciones</li>
-          <li>Producto integrador final del curso</li>
+          <li>Creacion del Produck Backlog con base PMI.</li>
+          <li>Sprint 1: creacion del carrito y estructura del sitio.</li>
+          <li>Act 2.1: Aplque SCRUM para tareas del backlog. </li>
+          <li>Act 2.2: Diseño de Sprin Scheudle.</li>
+          <li>Integracion de backlog y sprint en Act integradora.</li>
+          <li>Revision primer sprint y revision de ajustes.</li>
+          <li>Reunion de equipo para mejoras y ajustes.</li>
+          <li>Act. 3.3: navegacion de paginas</li>
+          <li>Recopilacion de docs y mejoras en codigo y subido a GitHub</li>
+          <li>Act. 4.1: Organice una reunion de revision. </li>
+          <li>Act 4.2:Segunda reunion, enfoque a ultimos ajustes.</li>
+          <li>Finalmente, tienda web desarrollada con react bajo metodologia SCRUM.</li>
+       
         </ul>
       </div>
 
